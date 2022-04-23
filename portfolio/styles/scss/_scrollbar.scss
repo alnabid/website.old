@@ -1,0 +1,23 @@
+
+
+.aboutText {
+    padding: 0 2rem 0 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: skyblue; 
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(94, 79, 79); 
+}

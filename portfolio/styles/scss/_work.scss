@@ -1,0 +1,27 @@
+#work {
+    .featured {
+        margin: 2rem 20%;
+        /* if there are no projects yet*/
+        .noProjects {
+            border-radius: 1rem;
+            padding: 1rem;
+            background: rgb(41, 41, 41);
+            h1 {
+                color: rgba(0, 217, 255, 0.349);
+                font-size: 2rem;
+                a {
+                    color: rgba(128, 128, 128, 0.63);
+                    font-size: 1rem;
+                    transition: 100ms;
+
+                    &:hover {
+                        color: rgba(16, 192, 31, 0.651);
+                    }
+                }
+            }
+        }
+
+        /*If there are projects done!*/
+        /*yet to code*/
+    }
+}

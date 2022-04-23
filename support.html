@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="title" content="alnabid - support">
+<meta name="description" content="Support alnabid by donating, becoming a patreon etc. - alnabid">
+<meta name="keywords" content="alnabid, Code, Portfolio, Website Designer, Freelancer, Youtuber, Support">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="author" content="Abdullah Al Nabid">
+<link rel="shortcut icon" href="assets/icontrans.ico" type="image/icon">
+
+
+<title>alnabid - support</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+    integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="font/font.css">
+<link rel="stylesheet" href="pages/styles/preloader.css">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7414626150143033"
+    crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            outline: 0;
+            border: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #111, #222, #111, #222, #111, #222, #111);
+            background-size: 300% 400%;
+            animation: gradient 10s ease-in-out infinite;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        a , a:hover{
+            color: white;
+            text-decoration: none;
+            transition: 200ms;
+        }
+
+        .support {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .options:nth-child(2) {
+            height: 33rem;
+            width: 23rem;
+        }
+
+        .options {
+            margin-top: 1rem;
+            height: 30rem;
+            width: 20rem;
+            background: black;
+            color: white;
+            border-radius: 1rem;
+            box-shadow: 0 0 0 0 black;
+            padding: 2rem;
+            cursor: pointer;
+            transition: 200ms;
+        }
+
+        .options:hover {
+            box-shadow: 0 1rem 1rem 0.5rem rgb(10, 10, 10);
+        }
+
+        .options:nth-child(1):hover i {
+            color: rgb(0, 140, 255);
+        }
+
+        .options:nth-child(2):hover i {
+            color: rgb(255, 109, 89);
+        }
+
+        .options:nth-child(3):hover i {
+            color: rgb(223, 26, 0);
+        }
+
+        .options i {
+            font-size: 4rem;
+            width: 100%;
+            text-align: center;
+            margin: 2rem 0;
+            transition: 200ms;
+        }
+
+        .options:hover a {
+            color: skyblue; 
+        }
+
+        .options h1 {
+            font-size: 3rem;
+        }
+
+        .options a, .options h1 {
+            position: relative;
+            top: 25vh;
+        }
+
+        .home {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .home a {
+            color: rgb(98, 98, 211);
+            font-family: 'pop-r';
+            font-size: 1.1rem;
+            background: black;
+            width: 200px;
+            padding: 0.3rem 0;
+            position: relative;
+            top: 2vh;
+            box-shadow: 0 0rem 0rem 0rem black;
+            display: inline-block;
+            position: relative;
+        }
+
+        .home a:hover {
+            color: white;
+            box-shadow: 0 1rem 1rem 0.5rem rgb(10, 10, 10);
+        }
+
+        .home a::after {
+            content: '';
+            height: 0.1rem;
+            color: white;
+            background: white;
+            width: 100%;
+            position: absolute;
+            bottom: 0rem;
+            left: 0rem;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 200ms ease-out;
+        }
+
+        .home a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+
+        @media(max-width:760px) {
+
+            body {
+                overflow: scroll;
+            }
+
+            .options:nth-child(2) {
+                height: 30rem;
+                width: 20rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="preloader">
+    
+        <div>
+            <div>Please wait...</div>
+    
+            <p>Having some issues? <br>
+                <b>Try reconnecting to your internet</b> <br>
+                <a class="btn btn-outline-secondary" href="mailto:alnabidrm@gmail.com">Email to me</a>
+            </p>
+    
+        </div>
+    </div>
+
+    <section onclick="window.location.href = 'https://www.paypal.com/donate/?hosted_button_id=CKXA2PHH2KW78';" class="support">
+        <div class="options">
+            <i class="fa fa-dollar"></i>
+            <h1>Donate</h1>
+            <a href="#">Donate via paypal</a>
+        </div>
+        <div onclick="window.location.href = 'http://www.patreon.com/alnabid';" class="options">
+            <i class="fa fa-patreon"></i>
+            <h1>Patreon</h1>
+            <a href="#">Support on patreon</a>
+        </div>
+        <div onclick="window.location.href = 'http://www.youtube.com/alnabid';" class="options">
+            <i class="fa fa-youtube-play"></i>
+            <h1>YouTube</h1>
+            <a href="#">Subscribe to YouTube channel</a>
+        </div>
+    </section>
+
+    <div  class="home" ><a href="index.html">Back to website</a></div>
+    <div class="home"><a href="https://www.fiverr.com/alnabid">FIVERR</a></div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    
+    <script src="main.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+</body>
+</html>

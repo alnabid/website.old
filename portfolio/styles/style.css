@@ -1,0 +1,410 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222222;
+  color: white;
+}
+
+section {
+  background: #222222;
+  color: white;
+}
+
+section p span {
+  color: rgba(255, 255, 255, 0.301);
+  font-size: 0.60em;
+}
+
+.displayNone {
+  display: none !important;
+}
+
+.displayBlock {
+  display: block !important;
+}
+
+@-webkit-keyframes underline {
+  0% {
+    width: 0%;
+    background-color: black;
+  }
+  100% {
+    width: 100%;
+    background-color: skyblue;
+  }
+}
+
+@keyframes underline {
+  0% {
+    width: 0%;
+    background-color: black;
+  }
+  100% {
+    width: 100%;
+    background-color: skyblue;
+  }
+}
+
+#preloader {
+  background: #000 url(assets/loader-alnabid.gif) no-repeat center center;
+  z-index: 100;
+  height: 100vh;
+  width: 100%;
+  background-size: 0%;
+  position: fixed;
+}
+
+#preloader div div::after {
+  content: '';
+  display: block;
+  position: fixed;
+  margin: 13rem auto;
+  height: 2px;
+  -webkit-animation: underline 2s infinite;
+          animation: underline 2s infinite;
+}
+
+#preloader > div {
+  text-align: center;
+  margin: 20rem auto;
+  color: yellow;
+}
+
+#preloader p {
+  color: #333;
+  font-size: 0.8rem;
+  margin: 35vh 0;
+}
+
+#preloader a {
+  font-size: 0.5rem;
+  margin: 0.5rem;
+}
+
+.aboutText {
+  padding: 0 2rem 0 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: skyblue;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5e4f4f;
+}
+
+@media (max-height: 400px) {
+  .links a {
+    display: none;
+  }
+  header::after {
+    color: yellow;
+  }
+}
+
+@media (max-width: 800.4px) {
+  header .web-link {
+    left: 70vw;
+  }
+  header .links p:nth-child(1) {
+    display: none;
+  }
+  #aboutMe {
+    background-color: #222222;
+    color: white;
+    padding: 1rem 0;
+  }
+  #aboutMe div {
+    font-family: 'pop-r';
+    margin: 0 2rem;
+  }
+  #aboutMe div div .aboutText {
+    position: relative;
+    top: 0vh;
+    margin: 0 0rem 0 0rem;
+    height: 17rem;
+    overflow-y: scroll;
+  }
+  #aboutMe div div .aboutText a {
+    padding: 0 0 0 4rem;
+    margin: 1rem;
+    font-size: 0.7rem;
+  }
+  #aboutMe div div h1 {
+    font-family: 'pop-eb';
+    color: #e7e7e7;
+  }
+  #aboutMe div div > div:nth-child(1) {
+    background-color: #0084ff;
+    margin: 3rem 0;
+    border-radius: 7rem 0;
+  }
+  #aboutMe div div > div:nth-child(1) img {
+    width: 70vw;
+    height: 70vw;
+    border-radius: 100rem;
+    outline: solid #fffcfc 0.4rem;
+  }
+}
+
+@media (max-height: 500px) {
+  header::after {
+    content: 'The screen size you are viewing this site from is limited and will not be showing some content. Try switching to potrait mode or change the screen size.';
+    font-family: 'pop-eb';
+    color: yellow;
+    position: relative;
+    top: 70vh;
+    font-size: 0.5rem;
+  }
+  section {
+    display: none;
+  }
+}
+
+.fa-html5 {
+  color: orangered;
+}
+
+.fa-css3 {
+  color: skyblue;
+}
+
+.fa-sass, .fa-sass-alt {
+  color: hotpink;
+}
+
+.fa-bootstrap {
+  color: blueviolet;
+}
+
+.bi-git {
+  color: #999;
+}
+
+header {
+  background: #222 url(../../../assets/20220217_202930.png) no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  padding: 1rem;
+}
+
+header > p {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-family: 'pop-eb';
+  letter-spacing: 0.1rem;
+}
+
+header > p b {
+  color: skyblue;
+  -webkit-text-decoration: underline 0.1rem white;
+          text-decoration: underline 0.1rem white;
+}
+
+header .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 60%;
+}
+
+header .links p {
+  margin: 0rem 0.5rem 0 0;
+}
+
+header .links p a {
+  font-family: 'pop-b';
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background: #00b1f7;
+  padding: 2rem 2rem;
+  border-radius: 0.1rem;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+header .links p a:hover {
+  color: #e2dfdf;
+  background-color: #199dd1;
+}
+
+header .web-link {
+  font-size: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  background-color: white;
+  color: #00b1f7;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'pop-b';
+  letter-spacing: 0.1rem;
+  margin: 0 1rem 0 0;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+header .web-link:hover {
+  background-color: #cecece;
+  color: blue;
+}
+
+@media (min-width: 800.5px) {
+  #aboutMe {
+    background-color: #222222;
+    color: white;
+    padding: 1rem 0;
+  }
+  #aboutMe div {
+    font-family: 'pop-r';
+    margin: 0 2rem;
+  }
+  #aboutMe div div .aboutText {
+    position: absolute;
+    top: 118vh;
+    margin: 0 25rem;
+    width: 35%;
+    height: 14rem;
+    overflow-y: scroll;
+  }
+  #aboutMe div div .aboutText a {
+    color: white;
+    padding: 0 0 0 1rem;
+    margin: 1rem;
+    font-size: 0.7rem;
+  }
+  #aboutMe div div h1 {
+    font-family: 'pop-eb';
+    color: #e7e7e7;
+  }
+  #aboutMe div div > div:nth-child(1) {
+    background-color: #0084ff;
+    margin: 3rem 0;
+    border-radius: 7rem 0;
+  }
+  #aboutMe div div > div:nth-child(1) img {
+    height: 48vh;
+    border-radius: 100rem;
+    outline: solid #55bde6 0.4rem;
+  }
+}
+
+#skills {
+  display: -ms-grid;
+  display: grid;
+}
+
+#skills div {
+  display: -ms-grid;
+  display: grid;
+  margin: 1rem 0;
+}
+
+#skills div div:nth-child(1) {
+  width: 99%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.3rem;
+  max-height: 45vh;
+  overflow-y: scroll;
+}
+
+#skills div div:nth-child(1) p {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0.5rem;
+  background: #111111;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+#skills div div:nth-child(2) {
+  font-size: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#skills div div:nth-child(2) a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'pop-r';
+  color: white;
+  letter-spacing: 0.05rem;
+}
+
+#skills div div:nth-child(2) a p {
+  background: #292828;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+#skills div div:nth-child(2) a p:hover {
+  background: #107ca7;
+}
+
+#work .featured {
+  margin: 2rem 20%;
+  /* if there are no projects yet*/
+  /*If there are projects done!*/
+  /*yet to code*/
+}
+
+#work .featured .noProjects {
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #292929;
+}
+
+#work .featured .noProjects h1 {
+  color: rgba(0, 217, 255, 0.349);
+  font-size: 2rem;
+}
+
+#work .featured .noProjects h1 a {
+  color: rgba(128, 128, 128, 0.63);
+  font-size: 1rem;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+#work .featured .noProjects h1 a:hover {
+  color: rgba(16, 192, 31, 0.651);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,81 @@
+@media(max-height:400px) {
+    .links a {
+        display: none;
+    }
+
+    header::after {
+        color: yellow;
+    }
+}
+
+@media(max-width:800.4px) {
+    header {
+
+        .web-link {
+            left: 70vw;
+        }
+        .links {
+            p:nth-child(1) {
+                display: none;
+            }
+        }
+    }
+
+    #aboutMe {
+    background-color: #222222;
+    color: white;
+    padding: 1rem 0;
+
+    div {
+        font-family: 'pop-r';
+        margin: 0 2rem;
+
+        div {
+            .aboutText {
+                position: relative;
+                top: 0vh;
+                margin: 0 0rem 0 0rem;
+                height: 17rem;
+                overflow-y: scroll;
+                a {
+                    padding: 0 0 0 4rem;
+                    margin: 1rem;
+                    font-size: 0.7rem;
+                }
+            }
+            h1 {
+            font-family: 'pop-eb';
+            color: rgb(231, 231, 231);
+            }
+            
+            > div:nth-child(1) {
+            background-color: rgb(0, 132, 255);
+            margin: 3rem 0;
+            border-radius: 7rem 0;
+                img {
+                    width: 70vw;
+                    height: 70vw;
+                    border-radius: 100rem;
+                    outline: solid rgb(255, 252, 252) 0.4rem;
+                }
+            }
+        }
+    }
+}
+}
+
+ @media(max-height: 500px) {
+
+    header::after {
+        content: 'The screen size you are viewing this site from is limited and will not be showing some content. Try switching to potrait mode or change the screen size.';
+        font-family: 'pop-eb';
+        color: yellow;
+        position: relative;
+        top: 70vh;
+        font-size: 0.5rem;
+    }
+
+    section {
+        display: none;
+     }
+}

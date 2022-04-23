@@ -1,0 +1,45 @@
+#skills {
+    display: grid;
+div {
+    display: grid;
+    margin: 1rem 0;
+        div:nth-child(1) {
+            width: 99%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 1.3rem;
+            max-height: 45vh;
+            overflow-y: scroll;
+            p {
+                height: fit-content;
+                margin: 0.5rem;
+                background: rgb(17, 17, 17);
+                padding: 0.5rem;
+                border-radius: 0.2rem;
+            }
+        }
+        div:nth-child(2) {
+            font-size: 1rem;
+            width: fit-content;
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: 'pop-r';
+                color: white;
+                letter-spacing: 0.05rem;
+                p {
+                    background: rgb(41, 40, 40);
+                    margin: 0.5rem;
+                    padding: 0.5rem;
+                    border-radius: 0.4rem;
+                    transition: 200ms;
+
+                    &:hover {
+                        background: rgb(16, 124, 167);
+                    }
+                }
+            }
+        }
+    }
+}

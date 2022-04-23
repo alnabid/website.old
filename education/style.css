@@ -1,0 +1,147 @@
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ub-r';
+    background: rgb(245, 225, 225);
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+a:hover {
+    opacity: 75%;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+    background: rgb(226, 66, 98);
+}
+
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+    position: relative;
+    top: 2vh;
+    font-size: 2vh;
+    gap: 1rem 3rem;
+}
+
+header div a {
+    font-family: 'pop-r';
+}
+
+main {
+    color: crimson;
+    font-family: 'ub-bi';
+}
+
+main .intro {
+    margin: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: crimson;
+    text-align: right;
+}
+
+main .intro hr {
+    margin: 1rem 0;
+    color: crimson;
+}
+
+.files {
+    margin: 0 4.5rem;
+}
+
+.files .each {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+    justify-content: space-around;
+    margin: 2rem 0;
+    background: transparent;
+    font-family: 'pop-eb';
+    border-radius: 1rem;
+}
+
+.name {
+    background: rgba(236, 93, 121, 0.801);
+    color: white;
+}
+
+.download {
+    background: rgb(238, 96, 124);
+}
+
+.name, .download {
+    width: 40rem;
+    padding: 0.5rem 2rem;
+}
+
+.name {
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.download {
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.name p {
+    font-size: 1rem;
+    color:azure;
+    font-family: 'pop-b';
+}
+
+.name p span {
+    opacity: 50%;
+    margin-left: 1rem;
+}
+
+.download {
+    font-family: 'pop-r';
+}
+
+@media(max-width:550px) {
+    main {
+        position: relative;
+        top: 20vh;
+    }
+
+    header div {
+        margin: -1rem 0;
+        padding: 1rem;
+        background: crimson;
+        width: 100%;
+    }
+}
+
+@media(max-width: 1365px) {
+
+.files .each {
+    border-radius: 1rem;
+    justify-content: center;
+}
+
+.name {
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+.download {
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+}

@@ -1,0 +1,45 @@
+@media(min-width: 800.5px) {
+    #aboutMe {
+    background-color: #222222;
+    color: white;
+    padding: 1rem 0;
+
+    div {
+        font-family: 'pop-r';
+        margin: 0 2rem;
+
+        div {
+            .aboutText {
+                position: absolute;
+                top: 118vh;
+                margin: 0 25rem;
+                width: 35%;
+                height: 14rem;
+                overflow-y: scroll;
+
+            a {
+                color: white;
+                padding: 0 0 0 1rem;
+                margin: 1rem;
+                font-size: 0.7rem;
+            }
+            }
+            h1 {
+            font-family: 'pop-eb';
+            color: rgb(231, 231, 231);
+            }
+            
+            > div:nth-child(1) {
+            background-color: rgb(0, 132, 255);
+            margin: 3rem 0;
+            border-radius: 7rem 0;
+                img {
+                    height: 48vh;
+                    border-radius: 100rem;
+                    outline: solid rgb(85, 189, 230) 0.4rem;
+                }
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,105 @@
+* {
+    outline: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(15, 14, 14);
+    color: white;
+    font-family: "pop-r";
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    padding: 1rem;
+    font-family: 'pop-r';
+    letter-spacing: 0.1rem;
+    background-color: #222;
+}
+
+header h1 {
+    margin: 1rem;
+}
+
+header a {
+    color: rgb(58, 56, 56);
+    padding: 0 1rem;
+    font-size: 0.7rem;
+}
+
+.paths {
+    position: absolute;
+    right: 1vw;
+    color: skyblue;
+    letter-spacing: 0;
+    opacity: 0.4;
+    font-size: 0.8rem;
+    transition: 100ms;
+}
+
+.paths:hover {
+    opacity: 1;
+}
+
+main {
+    margin: 3rem 0;
+}
+
+div {
+    padding: 1rem;
+}
+
+div h1 {
+    font-size: 1rem;
+    color: skyblue;
+}
+
+h2 span {
+    font-size: 0.9rem;
+    opacity: 0.1;
+}
+
+div ul {
+    padding: 0rem 5rem;
+}
+
+div ul p {
+    margin:  0 5rem;
+    color: rgb(71, 69, 69);
+}
+.iconify {
+    color: skyblue;
+    height: 2rem;
+    width: 2rem;
+}
+
+div a {
+    color: rgb(255, 108, 199);
+}
+
+div span {
+    padding: 1rem;
+    color: rgb(158, 155, 155);
+}
+
+
+.note {
+    margin: 0rem;
+}
+
+@media(max-width: 550px) {
+    div ul {
+        padding: 0 0;
+        padding-left: 0.5rem;
+    }
+}
